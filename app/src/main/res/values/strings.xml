@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Logic Bomb</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="op_atk">Vous êtes en train de visualiser les Attaquants</string>
+    <string name="op_def">Vous êtes en train de visualiser les Défenseurs</string>
+    <string name="operator_button">Opérateurs</string>
+    <string name="cr_dits">Crédits</string>
+    <string name="logic_bomb">Logic Bomb</string>
+    <string name="boutton_de_l_arme">Boutton de l\'arme</string>
+    <string name="image_de_l_arme">Image de l\'arme</string>
+    <string name="damage_0">Damage: 0</string>
+    <string name="weapon_name">Weapon Name</string>
+    <string name="mag_size_0">Mag Size: 0</string>
+    <string name="capacity_ammo_0">Capacity Ammo: 0</string>
+    <string name="rate_of_fire_0">Rate of Fire: 0</string>
+    <string name="image_de_l_op_rateur">Image de l\'opérateur</string>
+    <string name="todo">TODO</string>
+    <string name="operator_name">Operator Name</string>
+    <string name="credits">Développé par : Nourry Celian\n\nTous les arts sont faits par Ubisoft du jeu Rainbow Six Siege\n\nMusique : Ubisoft</string>
+    <string name="creditstextview">Crédits</string>
+    <string name="fermer">Fermer</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#212121"
+    tools:context=".MainFragment">
+
+    <!-- Titre du menu principal -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logic_bomb"
+        android:textSize="36sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Conteneur pour les boutons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <!-- Bouton pour naviguer vers les opérateurs -->
+        <Button
+            android:id="@+id/operatorButton"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/operator_button"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#009688"
+            android:layout_marginBottom="20dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <!-- Bouton pour les crédits -->
+        <Button
+            android:id="@+id/creditsButton"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/cr_dits"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#f44336"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+    </LinearLayout>
+</FrameLayout>

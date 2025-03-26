@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/white_background"
+    tools:context=".WeaponDetailsFragment">
+
+    <ImageView
+        android:id="@+id/weaponImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/image_de_l_arme"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/weapon_frame"
+        android:scaleType="centerInside" />
+
+    <!-- Nom de l'arme -->
+    <TextView
+        android:id="@+id/weaponName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="@string/weapon_name"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/weaponDamage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/damage_0"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/weaponMagSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/mag_size_0"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/weaponCapacityAmmo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/capacity_ammo_0"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/weaponRateOfFire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/rate_of_fire_0"
+        android:layout_gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/weaponDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:maxLines="5"
+        android:ellipsize="end" />
+</LinearLayout>

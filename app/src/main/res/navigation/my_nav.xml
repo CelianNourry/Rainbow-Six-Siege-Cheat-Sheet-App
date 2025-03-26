@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.logicbomb.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/navigateToOperators"
+            app:destination="@id/operators" />
+        <action
+            android:id="@+id/action_mainFragment_to_creditsActivity"
+            app:destination="@id/creditsActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/operators"
+        android:name="com.example.logicbomb.Operators"
+        android:label="fragment_operators"
+        tools:layout="@layout/fragment_operators" >
+        <action
+            android:id="@+id/navigateToMain"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_operators_to_weaponDetailsFragment"
+            app:destination="@id/weaponDetailsFragment" />
+        <action
+            android:id="@+id/action_operators_to_operatorDetailsFragment"
+            app:destination="@id/operatorDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weaponDetailsFragment"
+        android:name="com.example.logicbomb.WeaponDetailsFragment"
+        android:label="WeaponDetailsFragment" >
+        <action
+            android:id="@+id/action_weaponDetailsFragment_to_operators"
+            app:destination="@id/operators" />
+    </fragment>
+    <fragment
+        android:id="@+id/operatorDetailsFragment"
+        android:name="com.example.logicbomb.OperatorDetailsFragment"
+        android:label="fragment_operators_details"
+        tools:layout="@layout/fragment_operators_details" >
+        <action
+            android:id="@+id/action_operatorDetailsFragment_to_operators"
+            app:destination="@id/operators" />
+    </fragment>
+    <activity
+        android:id="@+id/creditsActivity"
+        android:name="com.example.logicbomb.CreditsActivity"
+        android:label="CreditsActivity" />
+
+</navigation>
